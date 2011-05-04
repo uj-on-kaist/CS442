@@ -1,0 +1,45 @@
+{\rtf1\ansi\ansicpg949\cocoartf1038\cocoasubrtf350
+{\fonttbl\f0\fnil\fcharset129 AppleGothic;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10500\viewh9000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\fs24 \cf0 \'b5\'a5\'c0\'cc\'c5\'cd \'b5\'ee\'b7\'cf/\'c3\'b3\'b8\'ae\
+- \'b8\'f0\'b5\'e7 Request\'b4\'c2 POST \'b8\'de\'bc\'d2\'b5\'e5\'b8\'a6 \'c0\'cc\'bf\'eb\'c7\'cf\'bf\'a9 \'c6\'c4\'b6\'f3\'b9\'cc\'c5\'cd \'b0\'aa\'c0\'bb \'b3\'d1\'b1\'e4\'b4\'d9.\
+\
+1. \'c0\'af\'c0\'fa \'b5\'ee\'b7\'cf\
+- URL: '/register/user'\
+- Parameters\
+  1) device_id : String (MAX: 100)  \'b1\'e2\'b1\'e2 \'b0\'ed\'c0\'af id\
+  2) name : String (MAX: 100) \'bb\'e7\'bf\'eb\'c0\'da \'c0\'cc\'b8\'a7\
+  3) depart_lat : float \'c3\'e2\'b9\'df\'c1\'f6 \'c0\'a7\'b5\'b5\
+  4) depart_lng :  float \'c3\'e2\'b9\'df\'c1\'f6 \'b0\'e6\'b5\'b5\
+  5) dest_lat : float \'b5\'b5\'c2\'f8\'c1\'f6 \'c0\'a7\'b5\'b5\
+  6) dest_lng :float \'b5\'b5\'c2\'f8\'c1\'f6 \'b0\'e6\'b5\'b5\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 - return\
+  1) code: (0: success / 1: error)\
+  2) msg: Error \'c0\'d6\'c0\'bb \'b0\'e6\'bf\'ec \'bf\'a1\'b7\'af \'c1\'a4\'ba\'b8 \'b8\'de\'bd\'c3\'c1\'f6\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0 \
+2. \'c6\'c8\'b7\'ce\'c0\'d7\
+- URL: '/register/gps'\
+- Parameters\
+ 1) provider : String (MAX: 100) \'c6\'c8\'b7\'ce\'c0\'d7 \'b4\'e7\'c7\'cf\'b4\'c2 \'bb\'e7\'b6\'f7 \'b1\'e2\'b1\'e2 \'b0\'ed\'c0\'af id\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+\cf0  2) follower : String (MAX: 100) \'c6\'c8\'b7\'ce\'c0\'d7 \'c7\'cf\'b4\'c2 \'bb\'e7\'b6\'f7 \'b1\'e2\'b1\'e2 \'b0\'ed\'c0\'af id\
+- return\
+  1) code: (0: success / 1: error)\
+  2) msg: Error \'c0\'d6\'c0\'bb \'b0\'e6\'bf\'ec \'bf\'a1\'b7\'af \'c1\'a4\'ba\'b8 \'b8\'de\'bd\'c3\'c1\'f6\
+\
+\
+3. GPS \'b5\'ee\'b7\'cf\
+- URL: '/register/gps'\
+- Parameters\
+ 1) provider : String (MAX: 100) \'c6\'c8\'b7\'ce\'c0\'d7 \'b4\'e7\'c7\'cf\'b4\'c2 \'bb\'e7\'b6\'f7 \'b1\'e2\'b1\'e2 \'b0\'ed\'c0\'af id\
+ 2) follower : String (MAX: 100) \'c6\'c8\'b7\'ce\'c0\'d7 \'c7\'cf\'b4\'c2 \'bb\'e7\'b6\'f7 \'b1\'e2\'b1\'e2 \'b0\'ed\'c0\'af id\
+- return\
+  1) code: (0: success / 1: error)\
+  2) msg: Error \'c0\'d6\'c0\'bb \'b0\'e6\'bf\'ec \'bf\'a1\'b7\'af \'c1\'a4\'ba\'b8 \'b8\'de\'bd\'c3\'c1\'f6\
+\
+}

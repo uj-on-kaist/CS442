@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Test</title>
+<style>
+body{padding:10px;}
+div{
+  border-bottom:1px dashed #000;
+}
+
+</style>
+</head>
+<body>
+
+<div>
+<h3>Register User</h3>
+<form action="/register/user" method="POST">
+{% csrf_token %}
+{{ register_user_form }}
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+<div>
+<h3>Follow</h3>
+<form action="/follow" method="POST">
+{% csrf_token %}
+{{ follow_form }}
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+<div>
+<h3>GPS</h3>
+<form action="/register/gps" method="POST">
+{% csrf_token %}
+{{ gps_form }}
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+
+<div>
+<h3>Unfollow</h3>
+<form action="/unfollow" method="POST">
+{% csrf_token %}
+{{ follow_form }}
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+<div>
+<h3>Delete Logs</h3>
+<form action="/delete/log" method="POST">
+{% csrf_token %}
+{{ delete_log_form }}
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+<div>
+<h3>Delete User</h3>
+<form action="/delete/user" method="POST">
+{% csrf_token %}
+{{ delete_log_form }}
+<input type="submit" value="Submit" />
+</form>
+</div>
+
+
+</body>
+</html>

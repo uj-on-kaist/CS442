@@ -44,14 +44,14 @@ def following_data(request):
       result['error']['message']='No such user: '+device_id
       return result
     
-    users=Follow.objects.filter(follower=request_user)
-    for user in users:
+    follows=Follow.objects.filter(follower=request_user)
+    for follow in follows:
       user_info=dict()
-      user_info['device_id']=user.provider.device_id
-      user_info['name']=user.provider.name
-      user_info['status_code']=user.provider.status.code
-      user_info['status_msg']=user.provider.status.msg
-      logs=GPSLog.objects.filter(user=user.provider).order_by('reg_date')
+      user_info['device_id']=follow.provider.device_id
+      user_info['name']=follow.provider.name
+      user_info['status_code']=follow.provider.status.code
+      user_info['status_msg']=follow.provider.status.msg
+      logs=GPSLog.objects.filter(user=follow.provider).order_by('reg_date')
       if logs.count():
         last_log=logs[0]
         user_info['lat']=last_log.lat

@@ -26,7 +26,11 @@ urlpatterns = patterns('',
     (r'^unfollow$', 'mobile.views.unfollow'),
     
     
+    (r'^gps/direction$', 'mobile.gps.getDirections'),
+    
+    
     (r'^test$', 'mobile.views.test'),
+    (r'^direction$', 'mobile.views.direction_test'),
     
     (r'^admin/', include(admin.site.urls)),
 )

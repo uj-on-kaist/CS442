@@ -8,7 +8,12 @@ import json
 
 def index(request):
   return HttpResponse("Index")
-
+#direction_test
+def direction_test(request):
+  t = loader.get_template('google.maps.html')
+  context = RequestContext(request)
+  return HttpResponse(t.render(context))
+  
 def test(request):
   t = loader.get_template('test.html')
   context = RequestContext(request)
